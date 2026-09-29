@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #121212;
+  --color-nav: #0a0a0a;
+  --color-panel: #1e1e1e;
+  --color-panel-2: #181818;
+  --color-border: #2e2e2e;
+  --color-accent: #c41e3a;
+  --color-accent-tint: #3a1620;
+  --color-muted: #9ca3af;
+  --color-faint: #737373;
+  --color-success: #22c55e;
+  --color-success-tint: #16241c;
+  --color-warning: #eab308;
+  --color-warning-tint: #2b2413;
+  --color-info: #3b82f6;
+  --color-info-tint: #16202f;
+  --color-danger: #ef4444;
+  --color-danger-tint: #2b1717;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-nav: var(--color-nav);
+  --color-panel: var(--color-panel);
+  --color-panel-2: var(--color-panel-2);
+  --color-border: var(--color-border);
+  --color-accent: var(--color-accent);
+  --color-accent-tint: var(--color-accent-tint);
+  --color-muted: var(--color-muted);
+  --color-faint: var(--color-faint);
+  --color-success: var(--color-success);
+  --color-success-tint: var(--color-success-tint);
+  --color-warning: var(--color-warning);
+  --color-warning-tint: var(--color-warning-tint);
+  --color-info: var(--color-info);
+  --color-info-tint: var(--color-info-tint);
+  --color-danger: var(--color-danger);
+  --color-danger-tint: var(--color-danger-tint);
+  --font-display: "Bebas Neue", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background: var(--color-ink);
+  color: #ffffff;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #ffffff;
+}
